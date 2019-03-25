@@ -47,15 +47,34 @@ var result = divMod(num1,num2);
 var age = prompt("select an age");
 var name = prompt("select a name");
 var food = prompt("select favorite food");
-combine(age, name, food); */
+// combine(age, name, food); */
+//
+//
+//
+// var add = function(number1, number2) {
+//   return number1 + number2;
+// };
+//
+// //calclate BMI
+// var height = parseInt(prompt("Enter a height:"));
+// var weight = parseInt(prompt("Enter weight:"));
+// var BMI = 703*(weight/(height*height));
+// alert("BMI is " + BMI);
 
 
+//calculate Fahrenheit to celsius: subtract 32, then multiply by .5556
+// var CtoF = function (celsius) {
+//   Fahrenheit = (celsius × (9/5)) + 32;
+// }
 
-var add = function(number1, number2) {
-  return number1 + number2;
-};
+//calculate celsius to Fahrenheit: multiply by 1.8, then add 32
+var FtoC = function(Fahrenheit) {
+  var x = Fahrenheit-32;
+  x=x*(5/9);
+  return x;
+}
 
-var height = parseInt(prompt("Enter a height:"));
-var weight = parseInt(prompt("Enter weight:"));
-var BMI = 703*(weight/(height*height));
-alert("BMI is " + BMI);
+var Fahrenheit = prompt("what temperature Fahrenheit?");
+Fahrenheit = parseInt(Fahrenheit);
+var celsius = FtoC(Fahrenheit);
+alert("That would be " + celsius + " degrees celsius.");
